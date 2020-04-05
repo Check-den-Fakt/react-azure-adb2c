@@ -86,7 +86,9 @@ const authentication = {
       { logger: logger,
         cacheLocation: config.cacheLocation,
         postLogoutRedirectUri: config.postLogoutRedirectUri,
-        redirectUri: config.redirectUri }
+        redirectUri: config.redirectUri,
+        validateAuthority: config.validateAuthority
+      }
     );
   },
   run: (launchApp) => {
